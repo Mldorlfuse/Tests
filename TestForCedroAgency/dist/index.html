@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TestForCedroAgency</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container-header">
+            <div class="header__content">
+                <a class="header__logo" href="#">
+                    <svg width="91" height="32" viewBox="0 0 91 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M75.3369 9H78.1435C82.2469 9 85.2635 11.9989 85.2635 15.9996C85.2635 20.0003 82.2421 22.9976 78.1435 22.9976H75.3369C71.2286 22.9976 68.2023 19.9971 68.2023 15.9996C68.2023 12.0022 71.2286 9 75.3369 9ZM75.3369 20.8658H78.1435C80.9355 20.8658 83.0068 18.7842 83.0068 15.9948C83.0068 13.2053 80.9307 11.1238 78.1435 11.1238H75.3369C72.54 11.1238 70.4557 13.2232 70.4557 15.9948C70.4557 18.7664 72.5448 20.8658 75.3369 20.8658ZM19.0349 17.7664C18.4297 19.6807 16.8286 20.8432 14.7623 20.8432H11.9524C9.24497 20.8432 7.25834 18.8185 7.25834 16.0047C7.25834 13.1909 9.24497 11.1564 11.9524 11.1564H14.7623C16.7636 11.1564 18.3418 12.2411 18.9926 14.0401H21.2363C20.5253 11.0022 17.9627 9.01483 14.7623 9.01483H11.9524C7.95147 9.01483 5 11.9699 5 16.0047C5 20.0395 7.95147 22.9865 11.9524 22.9865H14.7623C18.0164 22.9865 20.5823 20.9439 21.2835 17.7696L19.0349 17.7664ZM25.8431 20.6555V16.8789H33.7831V14.8493H25.8431V11.3243H34.2842V9.25415H23.6222V22.7452H34.4957V20.6555H25.8431ZM37.1705 9.25415H44.7509C48.7274 9.25415 51.6041 12.0826 51.6041 15.9956C51.6041 19.9087 48.7225 22.7452 44.7509 22.7452H37.1705V9.25415ZM39.3914 20.6799H44.6842C47.416 20.6799 49.3359 18.7218 49.3359 15.9956C49.3359 13.2695 47.416 11.3211 44.6842 11.3211H39.3914V20.6799ZM63.5906 17.4407C64.4026 17.1576 65.1049 16.6271 65.5983 15.924C66.0917 15.221 66.3512 14.381 66.3403 13.5228C66.3403 11.0353 64.4057 9.25415 61.8008 9.25415H53.7242V22.7452H55.9451V17.7524H61.3143L64.2186 22.7452H66.7113L63.5906 17.4407ZM61.6707 15.6822H55.9451V11.3243H61.6707C63.135 11.3243 64.082 12.2514 64.082 13.5033C64.082 14.7551 63.1415 15.6822 61.6707 15.6822Z" fill="#D0BC7A"/>
+                    </svg>                        
+                </a>
+                <div class="header__info">
+                    <a class="header__phone" href="tel:88005553535">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.66375 1H1.1579C1.1579 1 0.802622 3.74333 1.1579 5.44079C1.59925 7.54946 2.10164 8.85162 3.62501 10.375C5.14838 11.8984 6.45053 12.4007 8.55921 12.8421C10.2567 13.1974 13 12.8421 13 12.8421V10.3363C13 9.47539 12.4491 8.71111 11.6325 8.43888L10.5094 8.06453C10.2293 7.97116 9.9209 8.06903 9.7459 8.30685C9.10435 9.17871 7.82256 9.23788 7.10341 8.42884L5.66526 6.81092C5.01395 6.07819 5.05613 4.96226 5.7609 4.28078C5.96331 4.08506 6.03545 3.79056 5.94642 3.52344L5.56112 2.36754C5.28889 1.55086 4.52461 1 3.66375 1Z" stroke="#D0BC7A" stroke-width="1.5"/>
+                        </svg>
+                        <p>8 (800) 555-35-35</p>
+                    </a>
+                    <div class="header__links">
+                        <a class="header__liked" href="#">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.9205 2.06089C13.5784 1.72455 13.1722 1.45775 12.7252 1.27572C12.2782 1.09369 11.799 1 11.3151 1C10.8312 1 10.3521 1.09369 9.90504 1.27572C9.45801 1.45775 9.05185 1.72455 8.70976 2.06089L7.99982 2.75857L7.28988 2.06089C6.5989 1.38184 5.66172 1.00035 4.68453 1.00035C3.70733 1.00035 2.77016 1.38184 2.07917 2.06089C1.38819 2.73994 1 3.66092 1 4.62124C1 5.58157 1.38819 6.50255 2.07917 7.1816L2.78911 7.87928L7.99982 13L13.2105 7.87928L13.9205 7.1816C14.2627 6.84543 14.5342 6.44628 14.7194 6.00697C14.9047 5.56765 15 5.09678 15 4.62124C15 4.14571 14.9047 3.67484 14.7194 3.23552C14.5342 2.79621 14.2627 2.39706 13.9205 2.06089V2.06089Z" stroke="#D0BC7A" stroke-width="1.5"/>
+                            </svg>
+                            <div class="counter">
+                                <p>0</p>
+                            </div>
+                        </a>
+                        <a class="header__profile" href="#">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25023 4.40069C3.25023 2.92539 4.46955 1.70837 5.99983 1.70837C7.53011 1.70837 8.74943 2.92539 8.74943 4.40069C8.74943 5.87599 7.53011 7.093 5.99983 7.093C4.46955 7.093 3.25023 5.87599 3.25023 4.40069ZM5.99983 0.208374C3.66456 0.208374 1.75023 2.07371 1.75023 4.40069C1.75023 6.72766 3.66456 8.593 5.99983 8.593C8.3351 8.593 10.2494 6.72766 10.2494 4.40069C10.2494 2.07371 8.3351 0.208374 5.99983 0.208374ZM2.375 13.6657C2.375 12.1787 3.58039 10.9734 5.06731 10.9734H6.93168C8.4186 10.9734 9.624 12.1787 9.624 13.6657H11.124C11.124 11.3503 9.24703 9.47335 6.93168 9.47335H5.06731C2.75196 9.47335 0.875 11.3503 0.875 13.6657H2.375Z" fill="#D0BC7A"/>
+                            </svg>   
+                        </a>
+                    </div>
+                    <div class="header__nav-button">
+                        <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.75H20V0.25H0V1.75ZM0 7.75H20V6.25H0V7.75Z" fill="#21242E"/>
+                        </svg>                                          
+                    </div>     
+                </div>
+                <div class="header__nav-button-esc hidden">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.06065 8.00013L15.6014 1.45934L14.5408 0.398682L7.99999 6.93947L1.45928 0.398761L0.398621 1.45942L6.93933 8.00013L0.398644 14.5408L1.4593 15.6015L7.99999 9.06079L14.5408 15.6016L15.6014 14.5409L9.06065 8.00013Z" fill="#21242E"/>
+                    </svg>                        
+                </div>
+            </div>
+            
+                <nav class="nav hidden">
+                    <div class="container">
+                        <div class="nav__wrapper">
+                            <h2>Продукция</h2>
+                            <a href="#">Пигменты</a>
+                            <a href="#">Пигменты</a>
+                            <a href="#">Аппараты</a>
+                            <a href="#">Иглы</a>
+                            <a href="#">Расходные материалы</a>
+                        </div>
+                        <div class="nav__wrapper">
+                            <h2>Компания</h2>
+                            <a href="#">Блог</a>
+                            <a href="#">Обучение</a>
+                            <a href="#">Стать представителем</a>
+                            <a href="#">Контакты</a>
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>                    
+                </nav>
+            </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="menu">
+                        <ul class="menu__list">
+                            <div>
+                                <li class="menu__item menu__item_active">
+                                    <a href="#">
+                                        Профиль
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">
+                                        Мои заказы
+                                    </a>
+                                </li>
+                            </div>
+                            <li class="menu__item">
+                                <a href="#">
+                                    выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hero__content">
+                        <h1>Профиль</h1>
+                        <div class="hero__form">                    
+                            <h2>Данные профиля</h2>
+                            <form class="form" action="#">        
+                                <div class="form__input">
+                                    <label for="username">ФИО</label>
+                                    <input id="username" type="text" placeholder="Имя">
+                                </div>
+                                <div class="form__input">
+                                    <label for="email">Почта</label>
+                                    <input id="email" type="email" placeholder="Почта">
+                                </div>
+                                <div class="form__input">
+                                    <label for="phone">Телефон</label>
+                                    <input id="phone" type="phone" placeholder="Телефон">
+                                </div>
+                            </form>
+                            <button class="button">
+                                <p>Сохранить изменения</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trends">
+            <div class="container">
+                <div class="trends__header">
+                    <h2><span>Тренды</span> сезона</h2>
+                    <a class="trends__more" href="#">
+                        <p>Перейти в каталог</p>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.75" y="0.75" width="14.5" height="14.5" rx="7.25" stroke="#21242E" stroke-width="1.5"/>
+                            <path d="M7.24475 11L10.2448 8L7.24475 5" stroke="#21242E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="slider">
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__promo">
+                                <p>Sale</p>
+                            </div>
+                            <div class="card__like">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="card__line"></div>
+                        <div class="card__footer">
+                            <h3>Brown to Blonde</h3>
+                            <p class="card__desc">Пигмент для бровей</p>
+                            <p class="card__volume">12 ml.</p>
+                            <p class="card__price">1 500 ₽ <span>3 000 ₽</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__promo">
+                                <p>Акция! 1+1=3</p>
+                            </div>
+                            <div class="card__like">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="card__line"></div>
+                        <div class="card__footer">
+                            <h3>Brown to Blonde</h3>
+                            <p class="card__desc">Пигмент для бровей</p>
+                            <p class="card__volume">12 ml.</p>
+                            <p class="card__price">1 500 ₽ <span>3 000 ₽</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__promo">
+                                <p>Sale</p>
+                            </div>
+                            <div class="card__like">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="card__line"></div>
+                        <div class="card__footer">
+                            <h3>Brown to Blonde</h3>
+                            <p class="card__desc">Пигмент для бровей</p>
+                            <p class="card__volume">12 ml.</p>
+                            <p class="card__price">1 500 ₽ <span>3 000 ₽</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__promo">
+                                <p>Бесплатная доставка</p>
+                            </div>
+                            <div class="card__like">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="card__line"></div>
+                        <div class="card__footer">
+                            <h3>Brown to Blonde</h3>
+                            <p class="card__desc">Пигмент для бровей</p>
+                            <p class="card__volume">12 ml.</p>
+                            <p class="card__price">1 500 ₽ <span>3 000 ₽</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__promo">
+                                <p>Sale</p>
+                            </div>
+                            <div class="card__like">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="card__line"></div>
+                        <div class="card__footer">
+                            <h3>Brown to Blonde</h3>
+                            <p class="card__desc">Пигмент для бровей</p>
+                            <p class="card__volume">12 ml.</p>
+                            <p class="card__price">1 500 ₽ <span>3 000 ₽</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__promo">
+                                <p>Акция! 1+1=3</p>
+                            </div>
+                            <div class="card__like">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="card__line"></div>
+                        <div class="card__footer">
+                            <h3>Brown to Blonde</h3>
+                            <p class="card__desc">Пигмент для бровей</p>
+                            <p class="card__volume">12 ml.</p>
+                            <p class="card__price">1 500 ₽ <span>3 000 ₽</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__promo">
+                                <p>Бесплатная доставка</p>
+                            </div>
+                            <div class="card__like">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="card__line"></div>
+                        <div class="card__footer">
+                            <h3>Brown to Blonde</h3>
+                            <p class="card__desc">Пигмент для бровей</p>
+                            <p class="card__volume">12 ml.</p>
+                            <p class="card__price">1 500 ₽ <span>3 000 ₽</span></p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <a class="trends__more trends__more_mobile" href="#">
+                    <p>Перейти в каталог</p>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.75" y="0.75" width="14.5" height="14.5" rx="7.25" stroke="#21242E" stroke-width="1.5"/>
+                        <path d="M7.24475 11L10.2448 8L7.24475 5" stroke="#21242E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

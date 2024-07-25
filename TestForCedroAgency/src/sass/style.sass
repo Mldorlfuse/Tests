@@ -1,0 +1,489 @@
+$color-black: #21242E
+$color-yellow: #D0BC7A
+$color-grey: #21242E66
+
+$size-menu: 14px
+$size-nav: 16px
+$size-subheader: 24px
+$size-form-header: 16px
+$size-form-input: 16px
+$size-card-header: 18px
+$size-card-info: 14px
+$size-card-price: 18px
+
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto-Medium.eot')
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype')
+    font-weight: 500
+
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto-Regular.eot')
+    src: local('Roboto Regular'), local('Roboto-Medium'), url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype')
+    font-weight: 400
+
+@font-face 
+    font-family: 'Times New Roman'
+    src: url('TimesNewRomanPS-BoldItalicMT.eot')
+    src: local('Times New Roman Bold Italic'), local('TimesNewRomanPS-BoldItalicMT'), url('TimesNewRomanPS-BoldItalicMT.eot?#iefix') format('embedded-opentype'), url('TimesNewRomanPS-BoldItalicMT.woff') format('woff'), url('TimesNewRomanPS-BoldItalicMT.ttf') format('truetype')
+    font-weight: bold
+    font-style: italic
+
+*
+    box-sizing: border-box
+
+.hidden
+    display: none
+
+a
+    color: black
+    text-decoration: none
+    
+.container
+    max-width: 1152px
+    margin: 0 auto
+    padding: 0 16px
+    &-header
+        max-width: 1280px
+        margin: 0 auto
+        padding: 0 32px
+
+.button
+    width: 231px
+    height: 56px
+    border-radius: 4px
+    border: none
+    background: $color-black
+    cursor: pointer
+    p
+        color: rgb(255, 255, 255)
+        font-family: Roboto
+        font-size: 16px
+        font-weight: 500
+        line-height: 24px
+    &:hover
+        background: $color-yellow
+    &:active
+        background: $color-yellow
+        opacity: 0.5
+
+.header
+    width: 100%
+    // height: 64px
+    padding: 16px 0
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        svg
+            &:hover
+                opacity: 0.7
+    &__info
+        width: 315px
+        padding: 0 7px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__phone
+        display: flex
+        align-items: center
+        p
+            margin-left: 10px
+            color: $color-yellow
+            font-family: Roboto
+            font-size: $size-menu
+            font-weight: 500
+            line-height: 24px
+            letter-spacing: 0.5px
+        &:hover
+            svg
+                path
+                    stroke: $color-black
+            p
+                color: $color-black
+    &__links
+        width: 64px
+        display: flex
+        justify-content: space-around
+    &__liked
+        position: relative
+        &:hover
+            svg
+                path
+                    stroke: $color-black
+    &__profile
+        &:hover
+            svg
+                path
+                    fill: $color-black
+    &__nav-button
+        margin-bottom: 3px
+        cursor: pointer
+        &:hover
+            svg
+                path
+                    fill: $color-yellow
+        &-esc
+            padding-right: 7px
+            cursor: pointer
+            &:hover
+                svg
+                    path
+                        fill: $color-yellow
+
+.hero
+    border-top: 1px solid #E4E4E4
+    border-bottom: 1px solid #E4E4E4
+    position: relative
+    &__wrapper  
+        display: flex
+    &__content
+            padding-top: 112px
+            padding-left: 95px
+            padding-bottom: 80px
+            h1
+                color: $color-black
+                font-family: Roboto
+                font-size: 80px
+                font-weight: 400
+                line-height: 80px
+                letter-spacing: 0%
+                text-transform: uppercase
+    &__form
+        margin-top: 160px
+        h2
+            margin-bottom: 48px
+
+            color: $color-black
+            font-family: Roboto
+            font-size: $size-subheader
+            font-weight: 500
+            line-height: 24px
+
+.menu
+    padding-right: 95px
+    padding-top: 110px
+    padding-bottom: 80px
+    border-right: 1px solid #E4E4E4
+    &__list
+        width: 98px
+    &__item
+        margin-bottom: 4px
+        a
+            color: $color-black
+            font-family: Roboto
+            font-size: $size-menu
+            font-weight: 500
+            line-height: 24px
+            letter-spacing: 0.5px
+            text-align: left
+            text-transform: uppercase
+        &_active
+            a
+                color: $color-yellow
+
+.form
+    width: 544px
+    margin-bottom: 137px
+    &__input
+        display: flex
+        flex-direction: column
+        label
+            margin-bottom: 12px
+
+            color: $color-grey
+            font-family: Roboto
+            font-size: $size-form-header
+            font-weight: 400
+            line-height: 24px
+        input
+            height: 56px
+            margin-bottom: 24px
+            padding: 16px
+            border: none
+            border-radius: 4px
+            background: rgb(247, 247, 247)
+            
+            color: $color-black
+            font-family: Roboto
+            font-size: $size-form-input
+            font-weight: 400
+            line-height: 24px
+            &::placeholder
+                color: rgba(33, 36, 46, 0.4)
+                font-family: Roboto
+                font-size: 16px
+                font-weight: 400
+                line-height: 24px
+            &:hover
+                border: none
+                &::placeholder
+                    color: rgba(33, 36, 46, 0.8)
+            &:focus
+                outline: 0
+                outline-offset: 0
+                border: 2px solid black
+
+.trends
+    padding: 112px 0
+    &__header
+        margin-bottom: 48px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        h2
+            color: $color-black
+            font-family: Roboto
+            font-size: 48px
+            font-weight: 500
+            line-height: 56px
+            text-transform: uppercase
+            span
+                color: $color-yellow
+    &__more
+        display: flex
+        align-items: center
+        svg
+            margin-left: 8px
+        &_mobile
+            display: none
+        &:hover
+            p
+                color: $color-yellow
+            svg
+                rect
+                    stroke: $color-yellow
+                path
+                    stroke: $color-yellow
+
+.slider, .slick-list, .slick-track
+    height: 418px
+
+.card
+    height: 418px
+    max-width: 256px
+    margin-right: 32px
+    border-radius: 8px
+    background: rgb(247, 247, 247)
+    &__header
+        height: 256px
+        padding: 24px 24px 0 24px
+        display: flex
+        justify-content: space-between
+        background: url(../img/item-bg.png) center/cover no-repeat
+    &__promo
+        height: 28px
+        padding: 0 12px
+        border-radius: 100px
+        display: flex
+        align-items: center
+        background: rgb(235, 87, 87)
+
+        color: #FFFFFF
+        font-family: Roboto
+        font-size: $size-card-info
+        font-weight: 400
+        line-height: 18px
+    &__like
+        cursor: pointer
+        margin-top: 5px
+        &:hover
+            svg
+                path
+                    fill:#21242E66
+        &:active
+            svg
+                path
+                    fill:$color-yellow
+        &_active
+            svg
+                path
+                    fill:$color-yellow            
+    &__line
+        height: 12px
+        margin-bottom: 24px
+        background: rgb(192, 141, 116)       
+    &__footer
+        padding: 0px 24px 24px 24px
+        h3  
+            margin-bottom: 8px
+
+            color: $color-black
+            font-family: TimesNewRoman
+            font-size: $size-form-header
+            font-weight: 700
+            line-height: 18px
+            font-style: italic
+    &__volume, &__desc
+        margin-bottom: 8px
+        color: $color-grey
+        font-family: Roboto
+        font-size: $size-card-info
+        font-weight: 400
+        line-height: 18px
+    &__price
+        color: $color-black
+        font-family: Times New Roman
+        font-size: $size-card-price
+        font-style: italic
+        font-weight: 700
+        line-height: 18px
+        span
+            margin-left: 8px
+            color: $color-grey
+            text-decoration: line-through
+
+.nav
+    margin: 204px 0 268px 0
+    .container
+        display: flex
+    &__wrapper
+        width: 50%
+        display: flex
+        flex-direction: column
+        h2
+            margin-bottom: 24px
+
+            color: $color-black
+            font-family: Roboto
+            font-size: $size-subheader
+            font-weight: 500
+            line-height: 24px
+        a
+            margin-bottom: 16px
+
+            color: rgba(33, 36, 46, 0.8)
+            font-family: Roboto
+            font-size: $size-nav
+            font-weight: 400
+            line-height: 24px
+    
+.counter
+    min-width: 13px
+    height: 14px
+    padding: 3px
+    border-radius: 100px
+    background: $color-black
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    top: -10px
+    right: -10px
+    p
+        color: rgb(255, 255, 255)
+        font-family: Roboto
+        font-size: 8px
+        font-weight: 500
+        line-height: 8px
+
+@media screen and (max-width: 1280px)
+    .container-header
+            padding: 0 16px
+
+@media screen and (max-width: 992px)
+    .hero
+        &__content
+            padding-top: 60px
+            padding-bottom: 60px
+            padding-left: 30px
+            h1
+                font-size: 60px
+        &__form
+            margin-top: 80px
+
+    .menu
+        padding-top: 60px
+        padding-right: 30px
+
+    .form
+        margin-bottom: 80px
+
+    .trends
+        &__header
+            h2
+                font-size: 38px
+    
+    .nav
+        margin: 150px 0 150px 0
+
+@media screen and (max-width: 768px)
+    .hero
+        &__wrapper
+            flex-direction: column
+        &__content
+            padding-top: 32px
+            padding-left: 0px
+            h1
+                font-size: 45px
+        &__form
+            margin-top: 32px
+
+    .menu
+        padding: 8px 0
+        border: none
+        border-bottom: 1px solid #e4e4e4
+        &__list
+            width: 100%
+            display: flex
+            justify-content: space-between
+            div
+                display: flex
+                li
+                    margin-right: 16px
+        &__item
+            margin: 0
+    .form
+        margin-bottom: 64px
+
+    .nav
+        margin: 50px 0 10px 0
+        .container
+            flex-direction: column
+        &__wrapper
+            width: 100%
+            margin-bottom: 40px
+            h2
+                font-size: 20px
+
+@media screen and (max-width: 576px)
+    .header
+        &__info
+            width: 144px
+        &__nav-button
+            margin-left: 20px
+        &__phone
+            svg
+                margin-right: 4px
+                margin-bottom: 4px
+            p
+                display: none
+    .hero
+        h1
+            font-size: 35px
+        &__form
+            h2
+                font-size: 20px
+    .form
+        width: 100%
+        &__input
+            input
+                width: 100%
+    
+    .button
+        width: 100%
+    
+    .trends
+        &__header
+            h2
+                font-size: 38px
+        &__more
+            display: none
+            &_mobile
+                margin-top: 32px
+                display: flex
+
+    .nav
+        margin: 32px 0 0px 0
